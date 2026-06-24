@@ -9,7 +9,7 @@ import HealthRecords from "../pages/HealthRecords";
 import MedicalHistory from "../pages/MedicalHistory";
 import Medicines from "../pages/Medicines";
 import Appointment from "../pages/appointment";
-import Staff from "../pages/staff";
+import staff from "../pages/staff";
 import Reports from "../pages/Reports";
 import Settings from "../pages/Settings";
 
@@ -36,7 +36,7 @@ function AppRoutes() {
 
         <Route path="/appointments" element={<Appointment />} />
 
-        <Route path="/staff" element={<Staff />} />
+        <Route path="/staff" element={<staff />} />
 
         <Route path="/reports" element={<Reports />} />
 

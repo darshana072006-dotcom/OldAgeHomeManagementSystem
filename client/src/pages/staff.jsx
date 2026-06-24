@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "../styles/Staff.css";
+import "../styles/staff.css";
 
-function Staff() {
+function staff() {
   const [staffList, setStaffList] = useState([]);
 
   const [staff, setStaff] = useState({
@@ -41,9 +41,9 @@ function Staff() {
     try {
       await axios.post("http://localhost:5000/api/staff", staff);
 
-      alert("Staff Added Successfully!");
+      alert("staff Added Successfully!");
 
-      setStaff({
+      setstaff({
         fullName: "",
         role: "",
         phone: "",
@@ -55,7 +55,7 @@ function Staff() {
 
       fetchStaff();
     } catch (error) {
-      alert("Error Adding Staff");
+      alert("Error Adding staff");
       console.log(error);
     }
   };
@@ -63,7 +63,7 @@ function Staff() {
   return (
     <div className="staff-container">
 
-      <h1>Staff Management</h1>
+      <h1>staff Management</h1>
 
       <form onSubmit={handleSubmit}>
 
@@ -136,11 +136,11 @@ function Staff() {
           required
         ></textarea>
 
-        <button type="submit">Add Staff</button>
+        <button type="submit">Add staff</button>
 
       </form>
 
-      <h2>Staff List</h2>
+      <h2>staff List</h2>
 
       <table>
 
@@ -176,4 +176,4 @@ function Staff() {
   );
 }
 
-export default Staff;
+export default staff;
